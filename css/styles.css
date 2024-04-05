@@ -1,26 +1,15 @@
-/*
-colors used
-
-text color (dark dark green): #244914
-primary color (dark green): #3e642e
-visited link color (muted purple): #8b82a0
-secondary color (green grey): #64745d
-tertiary color (pink): #ce9a9e
-quaternary color (dark pink): #a47b7e
-grid background (light pink): #fce5e9
-
-*/
 
 :root {
     /* colors used */
-    --darkerGreenText: #244914;
-    --darkGreen: #3e642e;
+    --background: #faf6f6;
+    --darkerText: #362a2a;
+    --darkLinks: #66545e;
     --lightPurpleVisited: #8b82a0;
-    --greenGreyActive: #64745d;
+    --GreyActive: #987e80;
     --pinkFocus: #ce9a9e;
     --darkPinkButtons: #a47b7e;
     --visitedButtonWhite: #f6f1f1;
-    --gridBGpink: #fce5e9;
+    --gridBGpink: #f6f1f1;
     --black: rgba(0,0,0,0.3);
     /* sun animation colors */
     --golden: #edc655;
@@ -34,11 +23,12 @@ grid background (light pink): #fce5e9
 }
 
 body {
+    background-color: var(--background);
     font-family:'Gothic A1', sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.6;
-    color: var(--darkerGreenText);
+    color: var(--darkerText);
 }
 
 h1 {
@@ -47,7 +37,7 @@ h1 {
 }
 
 a {
-    color: var(--darkGreen);
+    color: var(--darkLinks);
 }
 
 a:not(.button):visited {
@@ -67,7 +57,7 @@ a.button:visited {
 
 a:active {
     /* selected link */
-    color: var(--greenGreyActive);
+    color: var(--GreyActive);
 }
 
 button,
