@@ -36,6 +36,11 @@ h1 {
     font-weight: 700;
 }
 
+.gridTitle {
+    align-items: center;
+    justify-content: center;
+}
+
 a {
     color: var(--darkLinks);
 }
@@ -92,6 +97,10 @@ button:hover, button:focus
     display: flex;
     flex-direction: column;
     text-align: center;
+}
+
+.projectGrid {
+    margin: var(--margin)
 }
 
 .profile {
