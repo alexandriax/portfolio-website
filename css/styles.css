@@ -22,11 +22,13 @@ grid background (light pink): #fce5e9
     --visitedButtonWhite: #f6f1f1;
     --gridBGpink: #fce5e9;
     --black: rgba(0,0,0,0.3);
-    /* sun animation colors */
-    --golden: #edc655;
-    --yellow: #fcffad;
-    --orange: #f76414;
-    /* end sun animation colors */
+    /* sky animation colors */
+    --bluesky: #a3d1ff;
+    --purplesky: #cdcffc;
+    --pinkpurplesky: #ebcff0;
+    --pinksky: #fbd3e3;
+    --warmpinksky: #ffdbdb;
+    /* end sky animation colors */
     /* end colors used */
     --margin: 0 auto;
     --maxWidth: 700px;
@@ -209,13 +211,19 @@ button:hover, button:focus
 
 @keyframes color-change {
     0% {
-        fill: var(--golden);
+        fill: var(--bluesky)
+    }
+    25% {
+        fill: var(--purplesky)
     }
     50% {
-        fill: var(--yellow);
+        fill: var(--pinkpurplesky)
+    }
+    75% {
+        fill: var(--pinksky)
     }
     100% {
-        fill: var(--orange);
+        fill: var(--warmpinksky)
     }
 }
 
@@ -236,10 +244,6 @@ button:hover, button:focus
     }
 }
 
-.sun {
-    animation: 6s color-change infinite alternate linear;
-}
-
 .clouds {
     animation: 34s cloud-move-reverse infinite alternate linear;
 }
@@ -257,3 +261,6 @@ button:hover, button:focus
     animation: 34s cab-move infinite alternate linear;
 }
 
+.sky {
+    animation: 45s color-change infinite alternate linear;
+}
