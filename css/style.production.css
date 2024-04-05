@@ -224,37 +224,25 @@ button:hover, button:focus
 
 @-webkit-keyframes color-change {
     0% {
-        fill: #a3d1ff
-    }
-    25% {
-        fill: #cdcffc
+        fill: #edc655;
     }
     50% {
-        fill: #ebcff0
-    }
-    75% {
-        fill: #fbd3e3
+        fill: #fcffad;
     }
     100% {
-        fill: #ffdbdb
+        fill: #f76414;
     }
 }
 
 @keyframes color-change {
     0% {
-        fill: #a3d1ff
-    }
-    25% {
-        fill: #cdcffc
+        fill: #edc655;
     }
     50% {
-        fill: #ebcff0
-    }
-    75% {
-        fill: #fbd3e3
+        fill: #fcffad;
     }
     100% {
-        fill: #ffdbdb
+        fill: #f76414;
     }
 }
 
@@ -300,6 +288,11 @@ button:hover, button:focus
     }
 }
 
+.sun {
+    -webkit-animation: 6s color-change infinite alternate linear;
+            animation: 6s color-change infinite alternate linear;
+}
+
 .clouds {
     -webkit-animation: 34s cloud-move-reverse infinite alternate linear;
             animation: 34s cloud-move-reverse infinite alternate linear;
@@ -330,9 +323,4 @@ button:hover, button:focus
 .taxi {
     -webkit-animation: 34s cab-move infinite alternate linear;
             animation: 34s cab-move infinite alternate linear;
-}
-
-.sky {
-    -webkit-animation: 45s color-change infinite alternate linear;
-            animation: 45s color-change infinite alternate linear;
 }
