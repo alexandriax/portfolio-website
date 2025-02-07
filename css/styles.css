@@ -87,11 +87,17 @@ button:hover, button:focus
 }
 
 .page-footer {
-    clear: both;
     display: flex;
     flex-direction: column;
-    text-align: center;
+    align-items: center;      
+    justify-content: center;  
+    text-align: center;       
+    padding: 20px;
+    background-color: var(--background);
+    margin: 0 auto;           
+    width: 100%;              
 }
+
 
 .social-media ion-icon {
     font-size: 2rem;
@@ -106,6 +112,16 @@ button:hover, button:focus
     display:flex;
     align-items:center;
     justify-content:center;
+}
+
+.social-media a img {
+    width: 40px;             
+    height: 40px;
+    transition: transform 0.3s; 
+}
+
+.social-media a img:hover {
+    transform: scale(1.1);    
 }
 
 /* attempt 1 */

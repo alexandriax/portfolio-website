@@ -5,8 +5,6 @@
 * Browsers: last 4 version
 */
 
-
-
 body {
     background-color: #faf6f6;
     font-family:'Gothic A1', sans-serif;
@@ -95,7 +93,6 @@ button:hover, button:focus
 }
 
 .page-footer {
-    clear: both;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -103,8 +100,19 @@ button:hover, button:focus
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;      
+    -webkit-box-pack: center;      
+        -ms-flex-pack: center;      
+            justify-content: center;  
+    text-align: center;       
+    padding: 20px;
+    background-color: #faf6f6;
+    margin: 0 auto;           
+    width: 100%;              
 }
+
 
 .social-media ion-icon {
     font-size: 2rem;
@@ -125,6 +133,22 @@ button:hover, button:focus
     -webkit-box-pack:center;
         -ms-flex-pack:center;
             justify-content:center;
+}
+
+.social-media a img {
+    width: 40px;             
+    height: 40px;
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: -webkit-transform 0.3s;
+    -o-transition: transform 0.3s;
+    transition: transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s; 
+}
+
+.social-media a img:hover {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);    
 }
 
 /* attempt 1 */
