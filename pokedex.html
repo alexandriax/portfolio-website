@@ -8,67 +8,73 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.production.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
-    <header class="page-header">
-        <img src="img/name_logo.svg" alt="logo" class="page-header__logo">
-        <nav class="main-navigation page-header__item">
-            <ul role="menubar" class="navigation-list">
-                <li role="presentation">
-                    <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
-                </li>
-                <li role="presentation">
-                    <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
-                </li>
-                <li role="presentation">
-                    <a href="work.html" role="menuitem">Work</a>
-                </li>
-                <li role="presentation">
-                    <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
-                </li>
-            </ul> 
+    <header class="main-header">
+        <nav class="nav-bar">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="projects.html" class="nav-link">Projects</a>
+            <a href="about.html" class="nav-link">About</a>
         </nav>
     </header>
-    <main class="description">
-        <div>
-            <h1>Pokedex</h1>
+    <div class="project-container">
+    <section class="project-hero">
+        <h1 class="project-title2">Pokedex</h1>
+        <p class="subtitle">Explore, Search, and Discover Pokémon</p>
+    </section>
+
+    <main class="project-description2">
+        <div class="description-content">
+            <h2>Project Overview</h2>
             <p>
-                The objective for this app was to build a client side app using an external API. The API used can be found <a href="https://pokeapi.co/">here</a>. Users can search for specific pokemon, and view a detailed summary of each pokemon upon clicking on their cards. 
+                The objective for this app was to build a client-side app using an external API. The API used can be found 
+                <a href="https://pokeapi.co/" target="_blank">here</a>. Users can search for specific Pokémon and view detailed summaries of each upon clicking their cards.
             </p>
-        </div>
-        <div>
+
             <h2>Technologies Used</h2>
-            <ul>
+            <ul class="tech-list">
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>JavaScript</li>
                 <li>Bootstrap</li>
                 <li>jQuery</li>
             </ul>
+
+            <div class="cta-buttons">
+                <a href="https://alexandriax.github.io/simple-js-app/" class="btn" target="_blank">View Live App </a>
+                <a href="https://github.com/alexandriax/simple-js-app" class="btn" target="_blank">View Repository </a>
+            </div>
         </div>
-        <div>
-            <img src="img/pokedex.png" alt="Pokedex screenshot" height="500">
-            <br>
-            <br>
-            <h3><a href="https://alexandriax.github.io/simple-js-app/">hosted app</a></h3> <br>
-            <h3><a href="https://github.com/alexandriax/simple-js-app">repository</a></h3>
+
+        <div class="project-image">
+            <img src="img/pokedex.png" alt="Pokedex screenshot" />
         </div>
     </main>
+</div>
 
     <footer class="page-footer">
-        <p>Find me on</p>
-        <div class="social-media">
-            <a href="https://github.com/alexandriax" target="_blank">
-                <img src="img/github_icon.svg" alt="GitHub">
-            </a>
-            <a href="https://twitter.com/yourTwitterHandle" target="_blank">
-                <img src="img/twitter_icon.svg" alt="Twitter">
-            </a>
-            <a href="https://www.linkedin.com/in/alexandriaxhamilton/" target="_blank">
-                <img src="img/linkedin_icon.svg" alt="LinkedIn">
-            </a>
+        <div class="footer-content">
+            <h2 class="footer-title">Get in Touch</h2>
+    
+            <div class="contact-info">
+                <p> <a href="mailto:alexandria@example.com">Email Me</a></p>
+            </div>
+    
+            <div class="social-media">
+                <a href="https://github.com/alexandriax" target="_blank" aria-label="GitHub">
+                    <img src="img/github_icon.svg" alt="GitHub Icon">
+                </a>
+                <a href="https://linkedin.com/in/alexandriaxhamilton" target="_blank" aria-label="LinkedIn">
+                    <img src="img/linkedin_icon.svg" alt="LinkedIn Icon">
+                </a>
+                <a href="mailto:alexandria@example.com" aria-label="twitter">
+                    <img src="img/twitter_icon.svg" alt="twitter">
+                </a>
+            </div>
+            <p class="footer-note">Designed & Developed by Alexandria Hamilton © 2025</p>
         </div>
     </footer>
     
